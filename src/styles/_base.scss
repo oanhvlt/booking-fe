@@ -1,0 +1,57 @@
+/*
+ * General styles
+ */
+ @import "variables";
+ 
+ body, html {
+    background-image: "#fff";
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $fontmain;
+    font-size: $base-size - 2px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.content-container {
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: $base-size + 4px;
+    margin-top: 15px;
+    color: $colormain;
+  }
+  .content {
+    margin: 15px 30px;
+    box-shadow: 2px 2px 4px 0 $box-shadow-color;
+    -webkit-box-shadow: 2px 2px 4px 0 $box-shadow-color;
+  }
+}
+
+.btn-platform{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: $colormain;
+  color: white;
+  &:hover{
+    color: white !important;
+    background-color: rgb(100, 100, 100);
+  }
+}
+
+.bg-platform{
+  background-color: $colormain;
+  color: white;
+  &:hover{
+    color: white !important;
+    background-color: rgb(100, 100, 100);
+  }
+}
+
+a{
+  cursor: default;
+}

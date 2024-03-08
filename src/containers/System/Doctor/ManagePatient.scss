@@ -1,0 +1,86 @@
+@import "../../../styles/base.scss";
+
+div._loading_overlay_wrapper{
+    position: unset;
+    ._loading_overlay_overlay{
+        z-index: 1000000;
+    }
+}
+
+.manage-patient-container{
+  padding: 0 10%;
+    .mp-title{
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: center;
+        color: $colormain;
+    }
+
+    #patients {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    
+        .td-actions{
+            width: 20%;
+            text-align: center;
+        }
+    
+        .btn-confirm{
+            //width: 30px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: rgb(216, 146, 17);
+        
+            &:hover{
+                background-color: transparent !important;
+                color: orange !important;
+            }
+        }
+        
+        .btn-send-inv{
+            //width: 30px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: rgb(190, 17, 17);
+            
+            &:hover{
+                background-color: transparent !important;
+                color: red !important;
+            }
+        }
+    
+    
+    
+    }
+    
+    #patients td, #patients th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    #patients tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+    
+    #patients tr:hover {
+        background-color: $light-gray;
+    
+    }
+    
+    #patients th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: rgb(100, 100, 100);
+        color: white;
+    }
+  
+  
+  
+}

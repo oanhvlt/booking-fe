@@ -1,0 +1,49 @@
+@import "../../../styles/base.scss";
+
+.user-redux-container{
+    padding: 0 10%;
+
+    .user-redux-body{
+        h5{
+            color: $colormain;
+        }
+        button{
+            float: right;
+            margin-left: 10px;
+        }
+        .preview-img-container{
+            // display: flex;
+            // flex-direction: column;
+           
+            .preview-image{
+                border: 1px solid $border;
+                height: 150px;
+                width: 150px;
+                background: center center no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+        
+            .lbl-upload{
+                width: 150px;
+                margin-top: 10px;
+                padding:5px 8px;
+                border-radius: 3px;
+                background: gray;
+                color: white;
+        
+                i{
+                    padding-left: 3px;
+                }
+        
+                &:hover{
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+        
+        }  
+    }
+}
+
+

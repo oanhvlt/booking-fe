@@ -1,0 +1,100 @@
+{
+    "system_header":{
+        "welcome": "Welcome"
+    },
+
+    "home_header":{
+        "specialty": "Specialty",
+        "search_doctor_by_specialty": "Search doctor",
+        "health_facility": "Health Facility",
+        "select_clinic_room": "Select Clinic Room",
+        "doctor": "Doctor",
+        "select_doctor": "Select Doctor",
+        "checkup_package": "Checkup Package",
+        "general_health_check": "General Health Check",
+        "support": "Support"
+
+
+    },
+
+    "home_banner": {
+        "slogan1": "Healthy Living, Happy Living",
+        "slogan2": "Champion Your Health Today!",
+        "search_specialty": "Search Specialty",
+        "specialized_examination": "specialized examination",
+        "remote_examination": "Remote Examination",
+        "general_examination": "General Examination",
+        "medical_tests": "Medical Tests",
+        "mental_health": "Mental Health",
+        "dental_examination": "Dental Examination"
+    },
+  
+    "menu_cms": {
+        "system": {
+            "header": "System",
+            "system-administrator": {
+                "header": "System Administrator",
+                "user-manage": "User manage",
+                "user-redux": "User redux manage",
+                "register-package-group-or-account": "Register service package for group/account"
+            },
+            "system-parameter": {
+                "header": "System-parameter"
+            }
+        },
+        "admin": {
+            "user": "Users System",
+            "manage-doctor": "Manage doctors",
+            "manage-admin": "Manage administrators",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD redux user",
+            "clinic": "Clinics",
+            "manage-clinic": "Manage clinics",
+            "specialty": "Specialties",
+            "manage-specialty": "Manage specialties",
+            "handbook": "Handbook",
+            "manage-handbook": "Manage handbook"
+        },
+
+        "doctor": {
+            "manage-schedule": "Manage Doctor's schedule",
+            "manage-patient": "Manage Doctor's patient"
+        }
+    },
+
+    "manage-user":{
+        "manage": "Manage User",
+        "upload-avatar": "Upload Avatar",
+        "user-detail": "User details",
+        "email": "Email",
+        "password": "Password",
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "phonenumber": "Phonenumber",
+        "address": "Address",
+        "gender": "Gender",
+        "position": "Position",
+        "role": "Role",
+        "image": "Avatar",
+        "save": "Save",
+        "edit": "Update",
+        "cancel": "Cancel",
+        "reset": "Reset"
+    },
+    "manage-schedule": {
+        "title": "Manage Doctor's plan"
+    },
+
+    "patient": {
+        "doctor-details": {
+            "schedule": "Schedule"
+        }
+    },
+
+    "admin": {
+        "manage-doctor":{
+            "title":"Create Doctor's infomation"
+        }
+    }
+
+}

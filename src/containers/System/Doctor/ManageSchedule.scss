@@ -1,0 +1,39 @@
+@import "../../../styles/base.scss";
+
+.manage-schedule-container{
+    .ms-title{
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: center;
+        color: $colormain;
+    }
+
+    .pick-hour-container{
+      margin: 20px 0px;
+      //border: 1px solid gray;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .btn-schedule{
+        border: 1px solid $border;
+        &:hover{
+          border: 2px solid $colormain;
+        }
+        &.active{
+          color: $colormain;
+          font-weight: 600;
+          background-color: $light-blue;
+          &:hover{
+            border: 2px solid $colormain;
+          }
+        }
+      }
+
+    }
+
+    
+}

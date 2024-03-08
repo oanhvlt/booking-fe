@@ -1,0 +1,66 @@
+@import "../../../styles/base.scss";
+
+#users {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  .td-actions{
+    width: 10%;
+    text-align: center;
+  }
+
+  .btn-edit{
+    width: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(216, 146, 17);
+  
+    &:hover{
+      background-color: transparent !important;
+      color: orange !important;
+    }
+  }
+  
+  .btn-delete{
+    width: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(190, 17, 17);
+  
+    &:hover{
+      background-color: transparent !important;
+      color: red !important;
+    }
+  }
+
+
+
+}
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {
+    background-color: $light-gray;
+ 
+}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+
+
+
+
+

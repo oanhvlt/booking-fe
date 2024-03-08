@@ -1,0 +1,68 @@
+@import "../../../styles/base.scss";
+
+.clinic-details-container{
+
+    .description{
+        //border: 1px solid $border;
+        margin: 15px 0;
+        padding: 10px;
+        background: $bg-gray;
+
+        .name-clinic{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        h4{
+            font-size: 15px;
+        }
+        p{
+            font-size: 15px;
+        }
+        li{
+            font-size: 14px;
+        }
+    }
+
+    .eachDotor{
+        padding: 10px 0px;
+        display: flex;
+        width: 100%;
+        //min-height: 300px;
+        //border: 1px solid $border;
+        margin: 15px 0;
+
+        background-color: #fff;
+        box-shadow: 0 1px 6px $border;
+        border-radius: 8px;
+
+        .dt-content-left{
+            width: 50%;
+            padding: 10px;
+            .profile-doctor{
+
+            }
+        }
+
+        .dt-content-right{
+            width: 50%;
+            border-left: 1px solid $light-gray;
+            padding: 10px;
+
+            .schedule{
+
+            }
+            .extra-info{
+                border-top: 1px solid $light-gray;
+                margin-top: 10px;
+                padding-top: 10px;
+                .doctor-extra-info-container{
+                    padding-left:  0 !important;
+                }
+
+            }
+        }
+    }
+}

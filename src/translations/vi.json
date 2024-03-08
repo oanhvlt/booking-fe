@@ -1,0 +1,99 @@
+{
+    "system_header":{
+        "welcome": "Xin chào"
+    },
+    
+    "home_header":{
+        "specialty": "Chuyên khoa",
+        "search_doctor_by_specialty": "Tìm bác sĩ theo chuyên khoa",
+        "health_facility": "Cơ sở y tế",
+        "select_clinic_room": "Chọn phòng khám",
+        "doctor": "Bác sĩ",
+        "select_doctor": "Chọn bác sĩ giỏi",
+        "checkup_package": "Xét nghiệm y học",
+        "general_health_check": "Khám tổng quát",
+        "support": "Hỗ trợ"
+    },
+
+    "home_banner": {
+        "slogan1": "Sống khỏe, sống vui",
+        "slogan2": "Hãy bảo vệ sức khỏe của bạn ngay hôm nay!",
+        "search_specialty": "Tìm chuyên khoa",
+        "specialized_examination": "Khám chuyên khoa",
+        "remote_examination": "Khám từ xa",
+        "general_examination": "Khám tổng quát",
+        "medical_tests": "Xét nghiệm y học",
+        "mental_health": "Sức khoẻ tinh thần",
+        "dental_examination": "Khám nha khoa"
+    },
+
+    "menu_cms": {
+        "system": {
+            "header": "Hệ thống",
+            "system-administrator": {
+                "header": "Quản trị hệ thống",
+                "user-manage": "Quản lý người sử dụng",
+                "user-redux": "Quản lý user redux",
+                "register-package-group-or-account": "Đăng ký gói dịch vụ cho nhóm/tài khoản"
+            },
+            "system-parameter": {
+                "header": "Tham số hệ thống"
+            }
+        },
+        "admin": {
+            "user": "Người dùng",
+            "manage-doctor": "Quản lý bác sĩ",
+            "manage-admin": "Quản lý admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD redux user",
+            "clinic": "Phòng khám",
+            "manage-clinic": "Quản lý phòng khám",
+            "specialty": "Chuyên khoa",
+            "manage-specialty": "Quản lý chuyên khoa",
+            "handbook": "Cẩm nang",
+            "manage-handbook": "Quản lý cẩm nang"
+        },
+        "doctor": {
+            "manage-schedule": "Quản lý kế hoạch khám bệnh",
+            "manage-patient": "Quản lý bệnh nhân"
+        }
+       
+    },
+
+    "manage-user":{
+        "manage": "Quản lý người dùng",
+        "upload-avatar": "Tải ảnh đại diện",
+        "user-detail": "Thông tin chi tiết người dùng",
+        "email": "Địa chỉ email",
+        "password": "Mật khẩu",
+        "firstname": "Tên",
+        "lastname": "Họ",
+        "phonenumber": "Điện thoại",
+        "address": "Địa chỉ",
+        "gender": "Giới tính",
+        "position": "Chức danh",
+        "role": "Vai trò",
+        "image": "Ảnh đại diện",
+        "save": "Lưu thông tin",
+        "edit": "Câp nhật thông tin",
+        "cancel": "Huỷ bỏ",
+        "reset": "Làm mới"
+    },
+
+    "manage-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh bác sĩ"
+    },
+
+    "patient": {
+        "doctor-details": {
+            "schedule": "Lịch khám"
+        }
+    },
+
+    "admin": {
+        "manage-doctor":{
+            "title":"Tạo thêm thông tin bác sĩ"
+        }
+    }
+
+}

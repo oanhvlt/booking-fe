@@ -1,0 +1,441 @@
+@import "../../styles/common.scss";
+
+.container-page{
+    padding: 0 15%;
+}
+//Header menu
+
+.home-header-container{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+
+    .home-header-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .left-content{
+            width: 25%;
+            display: flex;
+            align-items: center;
+            padding: 0.5% 0.5% 0.5% 0;
+            i{
+                color: grey;
+                font-size: 25px;
+                cursor: pointer;
+                margin-right: 1%;
+            }
+            
+            .header-logo{
+                background: url(../../assets/images/logoBooking.png);
+                height: 100%;
+                width: 100%;
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+
+        }
+
+        .center-content{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .child-content{
+
+                .sub-title{
+                    font-weight: 400;
+                    font-size: 12px;   
+                }
+                &:hover{
+                    color: $text-hover;
+                    cursor: pointer;
+                }
+            }               
+        }
+
+        .right-content{
+            width: 25%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+            .support{
+                padding-right: 7%;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                i{
+                    font-size: 15px;
+                    color: $colormain;
+                    margin-right: 4px
+                }
+                &:hover{
+                    //color: $text-hover;
+                    font-weight: 550;
+                    cursor: pointer;
+                }
+            }
+            .language{
+                cursor: pointer;
+                opacity: 0.4;
+                font-weight: 550;
+                
+                &.active{
+                    opacity: 1;
+                    color: $colormain;
+                }
+                &:hover{
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+
+            .language-en{
+                margin-left: 2%;
+            }
+        }
+    }
+
+}
+
+//Header banner
+
+.home-header-banner{
+    background: url(../../assets/images/background6.jpeg) ;
+    
+    height: 600px;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    background-position: 0% 25%;
+
+    .content-up{
+        padding-top: 2%;
+        background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255, 0.3), rgba(8, 184, 243, 0.1));
+        height: 50%;
+        width: 100%;
+        .title1{
+            text-align: center;
+            font-size: 28px;
+            color: $colormain;
+        }
+    
+        .title2{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            text-shadow: 1px 1px 1px white;
+            color: $colormain;
+        }     
+    }
+
+    .content-between{
+        background: linear-gradient(360deg, rgba(255,255,255,0.1), rgba(8, 184, 243, 0.1));
+        height: 25%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .search{
+            width: 35%;
+            border: none;
+            border-radius: 25px;
+            background-color: $light-yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto; // để canh giữa div
+            padding: 10px;
+
+            i{
+                margin: 0 5px;
+                font-size: 15px;
+            }
+
+            input{
+                height: 30px;
+                width: 100%;
+                background: transparent;
+                border: none;
+                outline: none; //bỏ border khi click vào textbox
+                font-size: 15px;
+            }
+        }
+    }
+
+    .content-down{
+        //background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(8, 184, 243, 0.8));
+        background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+        height: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1%;
+        padding-top: 3%;
+
+        .option-child{
+            width: 13%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .icon-child{
+                background: white;
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 50%;
+                margin: 0 auto;
+                text-align: center;
+
+                i{
+                    color: $colormain;
+                    font-size: 20px;
+                    &:hover{
+                        color: $text-hover;
+                        cursor: pointer;
+                    }                 
+                }
+            }
+
+            .text-child{
+                color: $colormain;
+                font-size: 14px;
+                font-weight: 550;
+                text-align: center;
+                &:hover{
+                    color: $text-hover;
+                    cursor: pointer;
+                }
+            }
+        }
+    }         
+}
+
+//Sections
+
+.section-container{   
+    display: flex;
+    flex-direction: column;
+
+    
+    
+    .section-header{
+        //border: 1px solid green;
+        height: 60px;
+        margin-top: 25px;
+
+        .section-title{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .section-btn{
+            float: right;
+            padding: 10px 13px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            background-color: $light-blue;
+            color: $colormain;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $light-yellow;
+            }
+        }
+    }
+
+    .section-body{
+        //border: 1px solid $light-gray;
+        margin-left: -16px;
+        margin-bottom: 20px;
+        .section-item{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            
+            .item-custom{
+                border: 1px solid $light-gray;
+                border-radius: 20px;
+                margin-left: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .item-img {
+                    margin-top: 4%;
+                    height: 150px;
+                    text-align: center;
+                    background-size: contain;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    
+                    cursor: pointer;
+
+                    &.item-img-specialty{
+                        //background-image: url(../../assets/images/chuyen-khoa/cham-cuu.png);   
+                        width: 90%;
+                        border-radius: 15px;
+                    }
+
+                    &.item-img-medical{
+                        //background-image: url(../../assets/images/co-so-y-te/viet-duc.jpg);
+                        width: 90%;
+                    }
+
+                    &.item-img-outstanding-doctor{
+                        //background-image: url(../../assets/images/outstanding-doctors/anh-dai-dien-bs.jpg);
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        
+                    }
+
+                    &.item-img-handbook{
+                        background-image: url(../../assets/images/handbook/nang-co-hifu.png);
+                        border: 1px solid $light-gray;
+                        width: 80%;
+                    
+                    }
+
+                }
+
+                .item-text{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center; 
+                    height: 50px;
+                    text-align: center;       
+                }
+
+                .position{
+                    margin-top: 10px;
+                }
+            } 
+        }
+        
+        //overide slick-carousel css
+        .slick-prev, .slick-next {
+            border: 1px solid $light-gray !important;
+            border-radius: 8px;
+            z-index: 10 !important;
+            width: 30px !important;
+            height: 30px !important;
+        }
+        .slick-next{
+            right: -15px !important;
+           
+        }
+        .slick-prev{
+            left: 0px !important;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            font-family: "Font Awesome 5 Free" !important;
+            color: #cfcece !important;
+            font-weight: 550 !important;
+            font-size: 20px !important;
+           
+        }
+
+        .slick-prev:before{
+            content: "\f053" !important; //f060 //f177
+        }
+        .slick-next:before{
+            content: "\f054" !important;
+        }
+
+        .slick-disabled {
+            display: none !important;
+        }
+    
+    } 
+         
+} 
+
+.section-outstanding-doctor{
+    .item-custom{
+        background: $light-blue;
+        .item-img {
+            background-size: cover !important;
+        }
+    }
+}
+
+.section-handbook{
+    margin-top: 20px;
+    border-top: 1px solid $light-gray;
+    .section-body{
+        .section-item{
+            .item-custom{
+                border: none !important;
+                .item-text{
+                    font-size: 13px !important;       
+                }
+            }
+        }   
+        .slick-prev, .slick-next {
+            border: none !important;
+            z-index: 100 !important;
+        }
+        .slick-prev:before{
+            content: "\f060" !important; //f060 //f177
+        }
+        .slick-next:before{
+            content: "\f061" !important;
+        }
+    }
+   
+}
+
+.section-about {
+    //border: 1px solid red;
+    margin-top: 20px;
+    height: 500px !important;
+    border-top: 1px solid $light-gray;
+
+    .section-about-header{
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .section-about-content{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+
+        .content-left{
+            width: 60%;
+        }
+        .content-right{
+            width: 40%;
+
+            p{
+                text-align: justify;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.home-footer{
+    text-align: center;
+
+    a{
+        text-decoration: unset;
+    }
+}

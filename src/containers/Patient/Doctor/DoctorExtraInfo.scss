@@ -1,0 +1,86 @@
+@import "../../../styles/base.scss";
+
+.doctor-extra-info-container{
+    padding-left: 15px;
+
+    .content-up{
+
+        .text-address{
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #505050;
+        }
+        .name-clinic{
+            padding: 3px 0;
+            font-weight: 600;
+            color: #505050;
+        }
+        .address-details{
+            padding: 3px 0;
+            color: #505050;
+        }
+    }
+
+    .content-down{
+
+        .short-info{
+            .currency{
+                margin: 0 5px;
+                color: #505050;
+            }
+            .details{
+                padding-left: 5px;
+                cursor: pointer;
+                color: $colormain;
+                font-weight: 600;
+                &:hover{
+                    color: $text-hover;
+                }
+            }
+        }
+        
+        .title-price{
+            margin-bottom: 5px;
+        }
+
+        .detail-info{
+            border: 1px solid $border;
+            padding: 5px;
+            background: #f8f8f8;
+            .price{
+                padding-bottom: 5px;
+                .left{
+
+                }
+                .right{
+                    float: right;
+                }
+            }
+
+            .note{
+
+            }
+          
+        }
+
+        .payment{
+            border: 1px solid $border;
+            border-top: none;
+            padding: 5px;
+            background: $light-gray;
+        }
+        .hide-price{
+            margin-top: 10px;
+            span{
+                cursor: pointer;
+                color: $colormain;
+                font-weight: 600;
+                &:hover{
+                    color: $text-hover;
+                }
+            }
+        }
+    }
+
+
+}

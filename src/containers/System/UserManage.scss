@@ -1,0 +1,108 @@
+@import "../../styles/common.scss";
+
+#users {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+
+.btn-edit{
+  width: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(216, 146, 17);
+
+  &:hover{
+    background-color: transparent !important;
+    color: orange !important;
+  }
+}
+
+.btn-delete{
+  width: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(190, 17, 17);
+
+  &:hover{
+    background-color: transparent !important;
+    color: red !important;
+  }
+}
+
+.btn-platform{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: $colormain;
+  color: white;
+  &:hover{
+    color: white !important;
+    background-color: rgb(100, 100, 100);
+  }
+}
+
+.bg-platform{
+  background-color: $colormain;
+  color: white;
+  &:hover{
+    color: white !important;
+    background-color: rgb(100, 100, 100);
+  }
+}
+
+.modal-user-container{
+  .modal-header {
+    button {
+      background-color: transparent !important;
+      color: white;
+      font-size: 20px;
+      border: none;
+    }
+  }
+  .modal-user-body{
+    display: flex;
+    gap: 15px; //khoảng cách giữa các elem trong flex
+    flex-wrap: wrap;
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      width: 48%;
+
+      &.max-width-input{
+        width: 98%;
+      }
+  
+      input{
+        border-radius: 3px;
+        height: 30px;
+        border: 1px solid rgb(180, 179, 179);
+        outline: none;
+        padding: 0 10px;
+      }
+    }
+  }
+  
+ 
+}
+

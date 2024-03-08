@@ -1,0 +1,56 @@
+@import "../../../../styles/base";
+
+.booking-container{
+    .booking-content{
+        display: flex;
+        flex-direction: column;
+
+        .booking-header{
+            border-bottom: 1px solid $border;
+            padding: 10px 15px;
+
+            .left{
+                font-size: 15px;
+                font-weight: 600;
+                color: #333;
+            }
+            .right{
+                float: right;
+                cursor: pointer;
+            }
+        }
+
+        .booking-body{
+            padding: 15px;
+            height: 100%;
+        }
+
+        .booking-footer{
+            border-top: 1px solid $border;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+
+            button{
+                outline: none;
+                border: none;
+                border-radius: 3px;
+                padding: 4px 8px;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+            .btn-confirm{
+                background: $colormain;
+                color: white;
+
+            }
+            .btn-cancel{
+                background: $dark-gray;
+                color: white;
+            }
+        }
+    }
+}
